@@ -104,7 +104,7 @@ if "live_feedbacks" not in st.session_state:
 def main():
     from_text = ""
 
-    st.title("Multi-Language Translator 🌐")
+    st.title("Linguabridge")
     st.write("Supports over 22 Indian Regional Languages")
 
     activities = ["Chatbot Translator", "Translator", "Sentiment Analysis", "Accuracy Insights"]
