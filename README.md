@@ -1,4 +1,4 @@
-# Translator and Sentiment Analysis Chatbot
+# LinguaBridge
 
 ## Overview
 This is a **Streamlit-based chatbot application** that performs:
