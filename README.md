@@ -58,20 +58,11 @@ Linguabridge Pro is an advanced AI-powered translation system specializing in co
    pip install -r requirements.txt
    ```
    
-   Note: You might need to install PyTorch separately based on your system configuration. 
-   Visit [PyTorch's official website](https://pytorch.org/get-started/locally/) for installation instructions.
-
-4. **Download pre-trained models**:
-   The first time you run the application, it will automatically download the required models.
    
-   For offline use, you can download them manually:
-   ```bash
-   python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2')"
-   ```
 
 5. **Run the enhanced application**:
    ```bash
-   streamlit run app_enhanced.py
+   streamlit run translator.py
    ```
 
 6. **Open your browser** and navigate to `http://localhost:8501`
