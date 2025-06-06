@@ -43,8 +43,8 @@ Linguabridge Pro is an advanced AI-powered translation system specializing in co
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/linguabridge-pro.git
-   cd linguabridge-pro
+   git clone git@github.com:finessefleet/linguabridge.git
+   cd linguabridge
    ```
 
 2. **Create a virtual environment** (recommended):
