@@ -1,0 +1,36 @@
+{
+  "27c516ffff3d8ebd9ee31dbbbe130aa5": {
+    "text": "iam एक लड़का",
+    "source_language": "en",
+    "confidence": 0.5,
+    "quality_estimation": 0.87,
+    "metadata": {
+      "model_used": "google",
+      "rl_used": true,
+      "rl_quality_prediction": 0.8,
+      "is_code_mix": false,
+      "translation_path": [
+        "direct"
+      ],
+      "warnings": null,
+      "timestamp": 1750269667.2593503
+    }
+  },
+  "cf6000b307017c82f62441b67997e99a": {
+    "text": "मैं एक लड़का हूं",
+    "source_language": "en",
+    "confidence": 0.5,
+    "quality_estimation": 0.87,
+    "metadata": {
+      "model_used": "google",
+      "rl_used": true,
+      "rl_quality_prediction": 0.8,
+      "is_code_mix": false,
+      "translation_path": [
+        "direct"
+      ],
+      "warnings": null,
+      "timestamp": 1750269706.269304
+    }
+  }
+}
