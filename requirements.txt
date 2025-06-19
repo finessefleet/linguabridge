@@ -17,3 +17,6 @@ sentence-transformers>=2.2.2
 pytorch-lightning>=2.0.0
 rapidfuzz>=3.0.0
 joblib>=1.2.0
+spacy
+rouge
+evaluate
