@@ -122,31 +122,16 @@ def translate_telugulish_to_telugu(text: str) -> str:
 # ---------------------------------------------
 # Odialish → Odia
 # ---------------------------------------------
-@lru_cache()
-def load_odia_model():
-    tokenizer = AutoTokenizer.from_pretrained("ai4bharat/indictrans2-en-indic-1B", trust_remote_code=True)
-    model = AutoModelForSeq2SeqLM.from_pretrained(
-        "ai4bharat/indictrans2-en-indic-1B",
-        trust_remote_code=True,
-        torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32
-    ).to(device)
-    return tokenizer, model
+from indic_transliteration.sanscript import transliterate
 
 def translate_odia_to_odia(text: str) -> str:
-    # Step 1: Transliterate Onglish to native Odia script
-    odia_script = transliterate(text, sanscript.ITRANS, sanscript.ORIYA)
-
-    # Step 2: Translate using IndicTrans2 (Odia-to-Odia, identity translation to improve fluency)
-    tokenizer, model = load_odia_model()
-    batch = ip.preprocess_batch([odia_script], src_lang="ory_Orya", tgt_lang="ory_Orya")
-    inputs = tokenizer(batch, return_tensors="pt", padding=True, truncation=True).to(model.device)
-
-    with torch.no_grad():
-        outputs = model.generate(**inputs, max_length=128, num_beams=5)
-
-    decoded = tokenizer.batch_decode(outputs, skip_special_tokens=True)
-    result = ip.postprocess_batch(decoded, lang="ory_Orya")[0]
-    return result
+    """
+    Converts Odialish (Romanized Odia) to native Odia script using ITRANS.
+    Example: "Tume kebe asiba" → "ତୁମେ କେବେ ଆସିବ"
+    """
+    if not text:
+        return ""
+    return transliterate(text, "itrans", "oriya")
 
 
 # ---------------------------------------------
