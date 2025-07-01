@@ -143,4 +143,4 @@ The RL-based feedback system improves over time:
 ---
 
 ## 🛡️ License
-f you want a version with badges, GIFs, or a collapsible demo section!
+Got the license from FinesseFleet Foundation
