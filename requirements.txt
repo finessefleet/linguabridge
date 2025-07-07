@@ -70,15 +70,3 @@ fasttext.util
 indicnlp
 mosestokenizer
 opennmt
-
-# TensorFlow (commented out by default - uncomment if needed)
-# tensorflow
-# keras
-# keras-nlp
-# tf-keras
-
-# Download NLTK data and spaCy model
-# Run: python -m spacy download en_core_web_sm
-pip install pip-tools
-pip-compile requirements.txt
-pip-sync
