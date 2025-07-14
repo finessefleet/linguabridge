@@ -44,26 +44,28 @@ LinguaBridge is a powerful, user-friendly application that provides bilingual (E
 - Internet connection (for translation services and NLTK data download)
 
 ### Installation
-
-1. **Clone the repository**:
+0. **Create a .env file**:
+   ##Store the groq api in the file then proceed
+   
+2. **Clone the repository**:
    ```bash
    git clone [your-repository-url]
    cd Translator-app
    ```
 
-2. **Create and activate a virtual environment**:
+3. **Create and activate a virtual environment**:
    ```bash
    python -m venv venv
    .\venv\Scripts\activate  # Windows
    source venv/bin/activate  # macOS/Linux
    ```
 
-3. **Install the required packages**:
+4. **Install the required packages**:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Download NLTK data**:
+5. **Download NLTK data**:
    ```bash
    python -c "import nltk; nltk.download(['stopwords', 'punkt', 'wordnet', 'averaged_perceptron_tagger', 'omw-1.4'])"
    ```
@@ -105,9 +107,6 @@ We welcome contributions to improve LinguaBridge! Here's how you can help:
 - Enhance the UI/UX
 - Add more comprehensive tests
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📧 Contact
 
