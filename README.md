@@ -1,7 +1,7 @@
 # LinguaBridge
 
 ## 🌟 Overview
-LinguaBridge is a powerful, user-friendly application that provides bilingual (English-Hindi) translation and advanced sentiment analysis. Built with Streamlit, it combines custom language processing with an intuitive interface to deliver accurate translations and insightful sentiment analysis. The application now features enhanced distress detection and a comprehensive emotion analysis system to better understand user input.
+LinguaBridge is a powerful, user-friendly application that provides Multilingual translation and advanced sentiment analysis. Built with Streamlit, it combines custom language processing with an intuitive interface to deliver accurate translations and insightful sentiment analysis. The application now features enhanced distress detection and a comprehensive emotion analysis system to better understand user input.
 
 ## 📸 Screenshots
 
