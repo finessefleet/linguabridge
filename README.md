@@ -1,146 +1,120 @@
-# 🌐 Linguabridge
+# LinguaBridge - Bilingual Translation and Sentiment Analysis
 
-**Linguabridge** is an advanced multilingual code-mixed language translation and sentiment analysis tool built with Streamlit. It uses deep learning, rule-based NLP, and reinforcement learning to deliver highly accurate translations and sentiment analysis, especially for Indic languages and code-mixed texts.
-
+## 🌟 Overview
+LinguaBridge is a powerful, user-friendly application that provides bilingual (English-Hindi) translation and advanced sentiment analysis. Built with Streamlit, it combines custom language processing with an intuitive interface to deliver accurate translations and insightful sentiment analysis. The application now features enhanced distress detection and a comprehensive emotion analysis system to better understand user input.
 
 ## 📸 Screenshots
 
-### Main Translation Interface
-![Main Translation Interface](Screenshot%202025-06-23%20231726.png)
-*The main interface showing translation between English and Hindi with sentiment analysis*
+### Translation Interface
+![Translation Interface](Screenshot%202025-07-14%20191404.png)
 
-### Language Selection
-![Language Selection](Screenshot%202025-06-23%20231852.png)
-*Selecting from over 100 supported languages including major Indian languages*
+### Sentiment Analysis Results
+![Sentiment Analysis](Screenshot%202025-07-14%20193532.png)
 
-### Sentiment Analysis
-![Sentiment Analysis](Screenshot%202025-06-23%20231903.png)
-*Detailed sentiment analysis showing emotion distribution and confidence scores*
+### Detailed Emotion Analysis
+![Emotion Analysis](Screenshot%202025-07-14%20193549.png)
 
-### Translation History
-![Translation History](Screenshot%202025-06-23%20231923.png)
-*View and manage your translation history with search and filter options*
+## ✨ Key Features
 
----
+### 🔄 Bilingual Translation
+- **Hybrid Translation System**: Combines multiple approaches for accurate English-Hindi translation
+- **Real-time Processing**: Instant translation as you type
+- **Context Preservation**: Maintains meaning and context during translation
+- **Language Detection**: Automatically detects input language
 
-## 🚀 Features
+### 📊 Advanced Sentiment Analysis
+- **Multi-method Analysis**: Combines TextBlob and AFINN for robust sentiment detection
+- **Comprehensive Emotion Detection**: Identifies 32+ emotions including Joy, Sadness, Anger, Fear, and more
+- **Bilingual Processing**: Accurate sentiment analysis for both English and Hindi text
+- **Enhanced Distress Detection**: Automatically detects concerning content and provides supportive resources
+- **Prioritized Sentiment Analysis**: Ensures distress phrases are always flagged with appropriate sentiment
+- **Detailed Metrics**: Polarity, subjectivity, and confidence scoring with normalized values
 
-* 🔤 **Code-Mixed Language Translation**
-  Translate Hinglish, Bengalish, Tanglish, Telugulish, Odialish, Urdlish and more to their respective native scripts and languages.
+### 📈 Performance Insights
+- **Model Comparison**: Side-by-side comparison of different translation models
+- **User Feedback**: Collects and analyzes user ratings and feedback
+- **Interactive Visualizations**: Charts and graphs for performance metrics
 
-* 💬 **Multilingual Sentiment Analysis**
-  Analyze sentiment in over 20+ Indian and international languages using:
+## 🚀 Getting Started
 
-  * TextBlob
-  * VADER
-  * SentiWordNet
-  * BERT/IndicBERT models
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
+- Git (for cloning the repository)
+- Internet connection (for translation services and NLTK data download)
 
-* 🤖 **Reinforcement Learning Feedback System**
-  Continuously improve translation quality based on user feedback with an RL-based model.
+### Installation
 
-* 📊 **Visualization & Insights**
-  Real-time graphs, word clouds, confusion matrices, and model performance indicators.
+1. **Clone the repository**:
+   ```bash
+   git clone [your-repository-url]
+   cd Translator-app
+   ```
 
----
+2. **Create and activate a virtual environment**:
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\activate  # Windows
+   source venv/bin/activate  # macOS/Linux
+   ```
 
-## 🛠️ Tech Stack
+3. **Install the required packages**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-| Component        | Technology                    |
-| ---------------- | ----------------------------- |
-| Frontend         | Streamlit                     |
-| Backend          | Python, PyTorch, Transformers |
-| Translation      | HuggingFace Transformers      |
-| Sentiment Models | TextBlob, VADER, IndicBERT    |
-| Feedback Loop    | Custom RL-based PyTorch Model |
-| Visualization    | Seaborn, Plotly, WordCloud    |
+4. **Download NLTK data**:
+   ```bash
+   python -c "import nltk; nltk.download(['stopwords', 'punkt', 'wordnet', 'averaged_perceptron_tagger', 'omw-1.4'])"
+   ```
 
----
+### Running the Application
 
-## 🧩 Modules Overview
+1. **Start the Streamlit app**:
+   ```bash
+   streamlit run home.py
+   ```
 
-| File                    | Description                                                                       |
-| ----------------------- | --------------------------------------------------------------------------------- |
-| `translater.py`         | Main Streamlit UI integrating all components                                      |
-| `section.py`            | UI section for selecting translation type                                         |
-| `translation_module.py` | All translation functions using IndicTrans2, MBART, MarianMT, and transliteration |
-| `rl_feedback.py`        | Reinforcement learning feedback model for translation quality improvement         |
+2. **Open your browser and navigate to**:
+   ```
+   http://localhost:8501
+   ```
 
----
+## 🛠 Project Structure
 
-## 🗺️ Supported Language Pairs
+- `home.py`: Main application entry point
+- `translator.py`: Handles bilingual translation functionality
+- `sentiment_analyzer.py`: Implements sentiment analysis with distress detection
+- `accuracy_insights.py`: Manages performance metrics and visualizations
+- `rl_feedback.py`: Handles user feedback and reinforcement learning
 
-* **Hinglish ➝ Hindi**
-* **Bengalish ➝ Bengali**
-* **Bengali ➝ English**
-* **Tanglish ➝ Tamil**
-* **Telugulish ➝ Telugu**
-* **Odialish ➝ Odia**
-* **Urdlish ➝ Urdu**
+## 🤝 Contributing
 
----
+We welcome contributions to improve LinguaBridge! Here's how you can help:
 
-## 📥 Installation
+1. Fork the repository
+2. Create a new branch for your feature: `git checkout -b feature/your-feature-name`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Create a new Pull Request
 
-1. **Clone the repository**
+### Areas for Contribution:
+- Expand the distress phrase database
+- Add support for more Indian languages
+- Improve emotion detection accuracy
+- Enhance the UI/UX
+- Add more comprehensive tests
 
-```bash
-git clone https://github.com/finessefleet/linguabridge.git
-cd linguabridge
-```
+## 📝 License
 
-2. **Install requirements**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```bash
-pip install -r requirements.txt
-```
+## 📧 Contact
 
-3. **Set your Hugging Face token (if needed)**
+For any questions or feedback, please open an issue in the repository.
 
-```bash
-export HF_TOKEN=your_hf_token_here
-```
+## 🙏 Acknowledgments
 
-4. **Run the application**
-
-```bash
-streamlit run translater.py
-```
-
----
-
-## 📊 Feedback Model
-
-The RL-based feedback system improves over time:
-
-* Accepts user ratings (`good`, `needs_work`, `incorrect`)
-* Computes feature embeddings (e.g., length ratio, code-mix flags)
-* Trains a PyTorch model to predict translation quality
-* Model auto-updates every few minutes based on feedback frequency
-
----
-
-## 🧠 Models Used
-
-* `ai4bharat/IndicTrans2-*` (translation)
-* `shadabtanjeed/mbart-banglish-to-bengali-transliteration`
-* `Helsinki-NLP/opus-mt-bn-en`
-* `gowtham58/T_TL` for Tanglish
-* `TextBlob`, `VADER`, `spaCy`, `IndicBERT` for sentiment
-
----
-
-## 🧪 Example Use
-
-* Enter a code-mixed sentence like:
-
-  ```
-  "mujhe ghar jana hai"
-  ```
-* Choose "Hinglish ➝ Hindi"
-* Output: `मुझे घर जाना है`
-
----
-
-## 🛡️ License
-Got the license from FinesseFleet Foundation
+- Built with ❤️ using Streamlit
+- Utilizes NLTK, TextBlob, and AFINN for natural language processing
+- Special thanks to the open-source community for their valuable contributions

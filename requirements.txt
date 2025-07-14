@@ -1,83 +1,40 @@
-
 # Core Dependencies
+streamlit>=1.46.1
+googletrans>=4.0.2
+python-dotenv>=1.0.1
 
-nltk
+# Data Processing
+pandas>=2.2.2
+numpy>=1.26.4
+scikit-learn>=1.4.2
 spacy
-textblob
-pandas
-numpy
-matplotlib
-seaborn
-wordcloud
-scikit-learn
-scipy
 
-# Deep Learning
-torch
-torchvision
-torchaudio
-transformers
-sentence-transformers
+# NLP Libraries
+nltk>=3.8.1
+textblob>=0.17.1
+afinn>=0.1
+langdetect>=1.0.9
+emoji>=2.14.0
+pyspellchecker>=0.8.1
+statsmodels
 
-# Translation
-deep-translator
-googletrans
-libretranslatepy
+# Visualization
+matplotlib>=3.10.3
+plotly>=5.22.0
 
-# Text Processing
-regex
-unidecode
-emoji
-contractions
+# Development & Testing
+pytest>=8.2.2
+pytest-mock>=3.14.0
+pylint>=3.1.0
+black>=24.3.0
+flake8>=7.0.0
 
-# Web & API
-streamlit
-requests
-beautifulsoup4
+# Optional Dependencies
+requests>=2.32.4
 
-# Utilities
-tqdm
-python-dotenv
-colorama
+# For future translation features
+translate>=3.6.1
+sentencepiece>=0.1.99  # Required for some translation models
 
-# Development
-pytest
-black
-isort
-flake8
-mypy
-
-# Additional NLP
-fuzzywuzzy
-python-Levenshtein
-vaderSentiment
-rapidfuzz
-pydantic
-pydantic-settings
-pydantic-core
-plotly
-afinn
-plotly-express
-flair
-pattern
-spacytextblob
-joblib
-langid
-langdetect
-pycountry
-polyglot
-pycld2
-fasttext
-fasttext.util
-indicnlp
-mosestokenizer
-opennmt
-
-# TensorFlow (commented out by default - uncomment if needed)
-# tensorflow
-# keras
-# keras-nlp
-# tf-keras
-
-# Download NLTK data and spaCy model
-# Run: python -m spacy download en_core_web_sm
+# For enhanced text processing
+regex>=2023.12.25
