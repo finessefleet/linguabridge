@@ -1,40 +1,40 @@
 # Core Dependencies
-streamlit>=1.46.1
-googletrans>=4.0.2
-python-dotenv>=1.0.1
+streamlit
+googletrans
+python-dotenv
 
 # Data Processing
-pandas>=2.2.2
-numpy>=1.26.4
-scikit-learn>=1.4.2
+pandas
+numpy
+scikit-learn
 spacy
 
 # NLP Libraries
-nltk>=3.8.1
-textblob>=0.17.1
-afinn>=0.1
-langdetect>=1.0.9
-emoji>=2.14.0
-pyspellchecker>=0.8.1
+nltk
+textblob
+afinn
+langdetect
+emoji
+pyspellchecker
 statsmodels
 
 # Visualization
-matplotlib>=3.10.3
-plotly>=5.22.0
+matplotlib
+plotly
 
 # Development & Testing
-pytest>=8.2.2
-pytest-mock>=3.14.0
-pylint>=3.1.0
-black>=24.3.0
-flake8>=7.0.0
+pytest
+pytest-mock
+pylint
+black
+flake8
 
 # Optional Dependencies
-requests>=2.32.4
+requests
 
 # For future translation features
-translate>=3.6.1
-sentencepiece>=0.1.99  # Required for some translation models
+translate
+sentencepiece  # Required for some translation models
 
 # For enhanced text processing
-regex>=2023.12.25
+regex
